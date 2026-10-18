@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy & Terms of Service — Brainzio</title>
+  <meta name="description" content="Privacy Policy and Terms of Service for Brainzio: Puzzle Collection mobile game." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@600;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #070e28;
+      --card-bg: #0d1b3e;
+      --card-border: rgba(255, 255, 255, 0.1);
+      --cyan: #00f5d4;
+      --cyan-glow: rgba(0, 245, 212, 0.25);
+      --teal: #2ec4b6;
+      --blue: #38bdf8;
+      --purple: #a855f7;
+      --pink: #ff2a6d;
+      --gold: #ffb800;
+      --green: #2ecc71;
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      background-color: var(--bg);
+      background-image: 
+        radial-gradient(circle at 15% 15%, rgba(46, 196, 182, 0.12) 0%, transparent 40%),
+        radial-gradient(circle at 85% 75%, rgba(168, 85, 247, 0.10) 0%, transparent 45%);
+      color: var(--text-main);
+      line-height: 1.65;
+      padding: 32px 18px 80px;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      margin-bottom: 32px;
+      padding-top: 10px;
+    }
+
+    .badge-app {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(0, 245, 212, 0.1);
+      border: 1px solid rgba(0, 245, 212, 0.3);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--cyan);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: clamp(2rem, 5vw, 2.8rem);
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #ffffff 40%, var(--cyan) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 8px;
+    }
+
+    .sub-title {
+      color: var(--text-muted);
+      font-size: 1rem;
+      margin-bottom: 6px;
+    }
+
+    .meta-date {
+      display: inline-block;
+      font-size: 0.85rem;
+      color: #64748b;
+      background: rgba(255, 255, 255, 0.04);
+      padding: 4px 12px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    /* Tab Switcher */
+    .tab-container {
+      display: flex;
+      background: rgba(13, 27, 62, 0.85);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 5px;
+      margin-bottom: 28px;
+      gap: 6px;
+    }
+
+    .tab-btn {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 16px;
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      color: var(--text-muted);
+      background: transparent;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.25s ease;
+    }
+
+    .tab-btn:hover {
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .tab-btn.active {
+      background: linear-gradient(135deg, var(--teal) 0%, #0096c7 100%);
+      color: #ffffff;
+      box-shadow: 0 4px 16px var(--cyan-glow);
+    }
+
+    /* Banner Highlight Card */
+    .banner-card {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      background: rgba(46, 196, 182, 0.08);
+      border: 1.5px solid rgba(46, 196, 182, 0.35);
+      border-radius: 18px;
+      padding: 18px 20px;
+      margin-bottom: 24px;
+    }
+
+    .banner-icon {
+      font-size: 1.6rem;
+      line-height: 1;
+      background: rgba(46, 196, 182, 0.2);
+      padding: 10px;
+      border-radius: 12px;
+    }
+
+    .banner-title {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 800;
+      font-size: 1.15rem;
+      color: #ffffff;
+      margin-bottom: 4px;
+    }
+
+    .banner-desc {
+      color: #cbd5e1;
+      font-size: 0.92rem;
+      line-height: 1.55;
+    }
+
+    /* Policy / Legal Section Cards */
+    .content-tab {
+      display: none;
+      animation: fadeIn 0.3s ease forwards;
+    }
+
+    .content-tab.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 18px;
+      padding: 22px 24px;
+      margin-bottom: 18px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .card-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+
+    .card-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.18rem;
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: -0.2px;
+    }
+
+    .card-content {
+      color: #cbd5e1;
+      font-size: 0.94rem;
+      line-height: 1.65;
+    }
+
+    .card-content ul {
+      margin-top: 8px;
+      padding-left: 20px;
+    }
+
+    .card-content li {
+      margin-bottom: 8px;
+    }
+
+    .card-content li:last-child {
+      margin-bottom: 0;
+    }
+
+    .card-content strong {
+      color: #f8fafc;
+    }
+
+    a {
+      color: var(--cyan);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #5eead4;
+    }
+
+    .tag-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .tag {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      color: #94a3b8;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      color: #64748b;
+      font-size: 0.88rem;
+    }
+
+    .app-meta {
+      margin-top: 8px;
+      font-size: 0.8rem;
+      color: #475569;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 20px 14px 60px;
+      }
+      .card {
+        padding: 18px 16px;
+      }
+      .tab-btn {
+        padding: 10px 12px;
+        font-size: 0.85rem;
+      }
+      .banner-card {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge-app">🎮 Brainzio Game Collection</div>
+      <h1>Legal &amp; Privacy Center</h1>
+      <p class="sub-title">Brainzio: Puzzle Collection (com.brainzio)</p>
+      <div class="meta-date">Last Updated: October 18, 2026</div>
+    </header>
+
+    <!-- Interactive Navigation Tabs -->
+    <div class="tab-container" role="tablist">
+      <button class="tab-btn active" id="tab-privacy-btn" onclick="switchTab('privacy')">
+        🛡️ PRIVACY POLICY
+      </button>
+      <button class="tab-btn" id="tab-terms-btn" onclick="switchTab('terms')">
+        ⚖️ TERMS OF SERVICE
+      </button>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- TAB 1: PRIVACY POLICY                     -->
+    <!-- ========================================== -->
+    <main id="tab-privacy" class="content-tab active">
+      <div class="banner-card">
+        <div class="banner-icon">🔒</div>
+        <div>
+          <div class="banner-title">Your Privacy Is Respected</div>
+          <p class="banner-desc">
+            Brainzio is designed for safe, relaxing offline play. We do not require account registration, user logins, cloud profiles, or access to your contacts, camera, or personal files.
+          </p>
+        </div>
+      </div>
+
+      <!-- 1. Information We Process -->
+      <section class="card">
+        <div class="card-header">
+          <div class="card-icon" style="background: rgba(56, 189, 248, 0.15); color: #38bdf8;">💾</div>
+          <h2 class="card-title">1. Information We Process</h2>
+        </div>
+        <div class="card-content">
+          <p>Brainzio is a lightweight multi-puzzle casual arcade game. We handle minimal, non-identifying technical data:</p>
+          <ul>
+            <li><strong>Local Game Progress &amp; State:</strong> Your high scores, completed levels across all 5 puzzle games (Liquid Sort, Block Puzzle, Tile Match, 2048 Merge, and Number Connect), earned coins, unlocked fluid themes, and daily challenge records are stored strictly on your local device.</li>
+            <li><strong>Device Diagnostics &amp; Crash Performance:</strong> Standard non-identifying diagnostics (such as app freeze logs or memory consumption) may be recorded locally to maintain high 60fps performance and stability.</li>
+            <li><strong>No Personal Profiling:</strong> We do not collect or request your real name, email address, physical location, phone contacts, photos, or biometric data.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 2. Advertising & Monetization -->
+      <section class="card">
+        <div class="card-header">
+          <div class="card-icon" style="background: rgba(255, 184, 0, 0.15); color: #ffb800;">📢</div>
+          <h2 class="card-title">2. Advertising &amp; Monetization</h2>
+        </div>
+        <div class="card-content">
+          <p>
+            Brainzio is free to play and supported by contextual, non-intrusive mobile ads powered by verified third-party advertising partners, including <strong>Google AdMob</strong>.
+          </p>
+          <ul>
+            <li><strong>Advertising Identifiers:</strong> Depending on your device settings and local jurisdiction (e.g., GDPR in Europe/UK, or CCPA in California), Google Mobile Ads may process anonymous mobile advertising identifiers (such as Google Advertising ID / GAID) to serve personalized or non-personalized ads according to your explicit consent choices.</li>
+            <li><strong>Consent Management:</strong> Players can manage or reset consent choices at any time directly through device settings or through the in-game Privacy Settings option.</li>
+            <li><strong>Third-Party Policy References:</strong> For further information regarding how Google processes advertising data, please review the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a> and <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">Google AdMob Privacy Guide</a>.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 3. Children & Family Safety -->
+      <section class="card">
+        <div class="card-header">
+          <div class="card-icon" style="background: rgba(255, 42, 109, 0.15); color: #ff2a6d;">👶</div>
+          <h2 class="card-title">3. Children &amp; Family Safety (COPPA &amp; Families Policy)</h2>
+        </div>
+        <div class="card-content">
+          <p>
+            Brainzio is a general-audience casual brain puzzle game suitable for all ages. We strictly uphold Google Play's Families Policy and the Children’s Online Privacy Protection Act (COPPA):
+          </p>
+          <ul>
+            <li>We do not knowingly collect, store, or solicit personal information from children under 13 (or under applicable local legal age).</li>
+            <li>All game puzzle mechanics run entirely client-side on the device without chat rooms, user messaging, or external player interactions.</li>
+            <li>If a parent or guardian discovers that a child has inadvertently provided any data, please reach out to us and we will promptly investigate and clear the relevant record.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 4. Your Rights & Choices -->
+      <section class="card">
+        <div class="card-header">
+          <div class="card-icon" style="background: rgba(168, 85, 247, 0.15); color: #a855f7;">⚙️</div>
+          <h2 class="card-title">4. Your Rights &amp; Choices</h2>
+        </div>
+        <div class="card-content">
+          <ul>
+            <li><strong>Reset or Delete Game Data:</strong> Because your progress is stored locally, you have total control over your data. You may permanently erase all saved progress, coin balances, and scores at any time by clearing the app data in your device's <em>Settings &gt; Apps &gt; Brainzio &gt; Clear Storage</em> or by uninstalling the application.</li>
+            <li><strong>Opt Out of Interest-Based Advertising:</strong> You can opt out of personalized ad tracking globally on your Android device by visiting <em>Settings &gt; Google &gt; Ads &gt; Delete Advertising ID</em> or <em>Opt out of Ads Personalization</em>.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 5. Contact & Inquiries -->
+      <section class="card">
+        <div class="card-header">
+          <div class="card-icon" style="background: rgba(0, 245, 212, 0.15); color: #00f5d4;">✉️</div>
+          <h2 class="card-title">5. Contact &amp; Support</h2>
+        </div>
+        <div class="card-content">
+          <p>
+            If you have any questions, feedback, or inquiries regarding this Privacy Policy or data handling in Brainzio, please contact our developer support team:
+          </p>
+          <div style="margin-top: 10px; background: rgba(0,0,0,0.25); padding: 12px 16px; border-radius: 10px; border-left: 3px solid var(--cyan);">
+            <div><strong>Email Support:</strong> <a href="mailto:support@brainzio.app">support@brainzio.app</a></div>
+            <div style="margin-top: 4px; font-size: 0.88rem; color: #94a3b8;">Package Name: <code>com.brainzio</code></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========================================== -->
+    <!-- TAB 2: TERMS OF SERVICE                   -->
+    <!-- ========================================== -->
+    <main id="tab-terms" class="content-tab">
+      <div class="banner-card" style="background: rgba(255, 184, 0, 0.08); border-color: rgba(255, 184, 0, 0.35);">
+        <div class="banner-icon" style="background: rgba(255, 184, 0, 0.2);">⚖️</div>
+        <div>
+          <div class="banner-title">Rules &amp; Fair Play</div>
+          <p class="banner-desc">
+            By downloading, installing, or playing Brainzio, you agree to these fair terms. Play for fun, relax, sharpen your mind, and enjoy casual gaming.
+          </p>
+        </div>
+      </div>
+
+      <!-- 1. Casual Gaming License -->
+      <section class="card">
+        <div class="card-header">
+          <div class="card-icon" style="background: rgba(56, 189, 248, 0.15); color: #38bdf8;">🎮</div>
+          <h2 class="card-title">1. Casual Gaming License</h2>
+        </div>
+        <div class="card-content">
+          <p>
+            Brainzio grants you a personal, revocable, non-exclusive, non-transferable, limited license to download, install, and play the game collection solely for your personal, non-commercial entertainment on supported mobile devices.
+          </p>
+        </div>
+      </section>
+
+      <!-- 2. Virtual Coins & Progression -->
+      <section class="card">
+        <div class="card-header">
+          <div class="card-icon" style="background: rgba(255, 184, 0, 0.15); color: #ffb800;">🪙</div>
+          <h2 class="card-title">2. Virtual Coins &amp; Progression</h2>
+        </div>
+        <div class="card-content">
+          <ul>
+            <li>In-game coins, stars, hint tokens, undo privileges, and level progression are fictional, virtual gameplay elements created exclusively for in-game amusement.</li>
+            <li>Virtual currency and items hold <strong>no real-world monetary value</strong>, cannot be exchanged for cash, and cannot be refunded or transferred outside of the application.</li>
+            <li>Virtual coins are earned via game puzzle completion, daily challenges, or optional rewarded ads.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 3. Intellectual Property -->
+      <section class="card">
+        <div class="card-header">
+          <div class="card-icon" style="background: rgba(168, 85, 247, 0.15); color: #a855f7;">✨</div>
+          <h2 class="card-title">3. Intellectual Property</h2>
+        </div>
+        <div class="card-content">
+          <p>
+            All original artwork, visual effects, tube and fluid animations, sound effects, audio tracks, software code, branding assets, and the "Brainzio" title and logo are protected intellectual property. You may not decompile, reverse-engineer, modify, reproduce, or commercially distribute assets from Brainzio without prior written authorization.
+          </p>
+        </div>
+      </section>
+
+      <!-- 4. Service & Updates -->
+      <section class="card">
+        <div class="card-header">
+          <div class="card-icon" style="background: rgba(46, 204, 113, 0.15); color: #2ecc71;">🔄</div>
+          <h2 class="card-title">4. Service &amp; Game Updates</h2>
+        </div>
+        <div class="card-content">
+          <p>
+            We actively update and polish Brainzio to introduce new puzzle stages, performance upgrades, and gameplay refinements. We reserve the right to modify, adjust game mechanics, rebalance puzzle difficulty, or discontinue certain features to maintain optimal fair play and user satisfaction.
+          </p>
+        </div>
+      </section>
+
+      <!-- 5. Disclaimer & Limitation of Liability -->
+      <section class="card">
+        <div class="card-header">
+          <div class="card-icon" style="background: rgba(255, 107, 157, 0.15); color: #ff6b9d;">🛡️</div>
+          <h2 class="card-title">5. Disclaimer &amp; Limitation of Liability</h2>
+        </div>
+        <div class="card-content">
+          <p>
+            Brainzio is provided on an "AS IS" and "AS AVAILABLE" basis without warranties of any kind, whether express or implied. While we strive to deliver an uninterrupted, bug-free gaming experience, the developers shall not be liable for any device incompatibilities, data loss resulting from device resets/cleared cache, or incidental damages arising out of the use of the game.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 Brainzio Game Studio. All rights reserved.</p>
+      <div class="app-meta">
+        Application ID: com.brainzio &bull; Built with Flutter &bull; Available on Google Play Store
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    function switchTab(tabName) {
+      const privacyTab = document.getElementById('tab-privacy');
+      const termsTab = document.getElementById('tab-terms');
+      const privacyBtn = document.getElementById('tab-privacy-btn');
+      const termsBtn = document.getElementById('tab-terms-btn');
+
+      if (tabName === 'privacy') {
+        privacyTab.classList.add('active');
+        termsTab.classList.remove('active');
+        privacyBtn.classList.add('active');
+        termsBtn.classList.remove('active');
+        window.location.hash = 'privacy';
+      } else {
+        termsTab.classList.add('active');
+        privacyTab.classList.remove('active');
+        termsBtn.classList.add('active');
+        privacyBtn.classList.remove('active');
+        window.location.hash = 'terms';
+      }
+    }
+
+    // Auto switch based on URL hash (e.g. #terms or #privacy)
+    window.addEventListener('DOMContentLoaded', () => {
+      if (window.location.hash === '#terms') {
+        switchTab('terms');
+      }
+    });
+  </script>
+</body>
+</html>
